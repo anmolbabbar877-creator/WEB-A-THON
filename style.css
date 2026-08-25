@@ -152,3 +152,72 @@ header{
         opacity:0.18;
         pointer-events: none;
     }
+
+    .hero::before{
+         background-color :#ff3cac;;
+          top: 10%;
+          left: -120px;
+    }
+
+    .hero::after{
+       background-color : #ff3cac;
+       bottom : 5%;
+       right : -120px;
+    }
+
+    .hero-content{
+        max-width :900px;
+        position :relative;
+        z-index :2;
+    }
+
+    .small-text{
+        color:#00e5ff;
+        letter-spacing : 5px;
+        font-size: 14px;
+        font-weight: bold;
+        
+        text-transform: uppercase;
+
+        text-shadow: 0 0 15px rgba(0,229,255,0.5);
+    }
+
+    .hero h1{
+        font-size : clamp(70px,12vw,150px);
+        line-height :0.95;
+        margin :25px 0;
+
+        Font-weight : 900;
+        letter-spacing : -5px;
+
+        background:linear-gradient(
+            90deg,
+            #00e5ff,
+            #8a2be2,
+            #ff3cac
+        );
+        background-size : 200% auto;
+
+        -webkit-background-clip : text;
+        background-clip : text;
+        color: transparent;
+
+        animation : gradientmove 5s linear infinite;
+        filter : drop-shadow(0 0 15px rgba(0,229,255,0.18));
+    }
+
+    @keyframes gradientmove{
+        0%{
+            background-position : 0% center;
+        }
+        100%{
+            background-position : 200% center;
+        }
+    }
+
+    .hero h2{
+        font-size : clamp(22px,4vw,32px);
+        margin-bottom : 15px;
+        color: #f5f7ff;
+    }
+
