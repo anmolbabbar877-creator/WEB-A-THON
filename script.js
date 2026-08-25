@@ -1,13 +1,10 @@
 //javascript
 // 1. REGISTER BUTTON
-const registerButtons = document.querySelectorAll(
-    ".register-button, .secondary, .register-main-button"
-);
-registerButtons.forEach(function(button) {
+const registerButtons = document.querySelectorAll(".register-button, .secondary, .register-main-button");
+registerButtons.forEach(function(button){
     button.addEventListener("click", function(event) {
         event.preventDefault();
         alert("Registration is opening soon!");
-
     });
 });
 // 2. EVENT BUTTONS
@@ -19,3 +16,4 @@ eventButtons.forEach(function(button) {
         alert("You selected: " + eventName +"\n\nMore details coming soon!");
     });
 });
+//3.
