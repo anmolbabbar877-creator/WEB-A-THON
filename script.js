@@ -11,10 +11,11 @@ registerButtons.forEach(function(button){
 const eventButtons= document.querySelectorAll(".event-button");
 eventButtons.forEach(function(button)
 {
-    button.addEventListener("click",function(){
+    button.addEventListener("click",function() {
         const eventName= this.parentElement.querySelector("h3").innerText;
         alert("You selected:" + eventName +"\n\nMore details coming soon!");
     });
 });
 //3. SIMPLE COUNTDOWN
 
+   
