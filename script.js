@@ -8,9 +8,10 @@ button.addEventListener("click", function(event){
 });
 //EVENT DETAILS BUTTONS
 const eventButtons= document.querySelectorAll(".event-button");
-eventButtons.forEach(function(button)
+eventButtons.forEach(function(button))
 {
-    button.addEventListener("click",function(){
+    button.addEventListener("click",function());
+    {
         const eventName= this.parrentElement.querySelector("h3").innerText;
         alert("You selected:" + eventName);
     }

@@ -71,3 +71,24 @@ header{
     transition: 0.3s ease;
 }
 
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: -7px;
+    background: linear-gradient(
+        90 deg,
+        #00e5ff,
+        #ff3cac
+    );
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover{
+    color:#00e5ff;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
